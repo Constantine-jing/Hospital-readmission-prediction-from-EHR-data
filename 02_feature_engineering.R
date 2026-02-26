@@ -1,5 +1,0 @@
-library(tidyverse)
-df <- read.csv("data/raw/cohort.csv")
-dim(df)
-names(df)
-head(df)
