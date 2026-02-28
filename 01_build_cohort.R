@@ -5,7 +5,9 @@
 library(data.table)
 
 # --- Set paths ---
-raw_dir <- "C:/Users/Mengyan/Desktop/Hospital-readmission-prediction-from-EHR-data/data/raw"
+project_root <- "G:/PHD_courses_start_star_star/Hospital-readmission-prediction-from-EHR-data"
+raw_dir <- file.path(project_root, "data/raw")
+processed_dir <- file.path(project_root, "data/processed")
 
 # --- 1.1 Read core tables ---
 cat("Reading admissions...\n")
@@ -86,7 +88,7 @@ top_dx <- merge(neuro_dx[hadm_id %in% cohort$hadm_id], d_icd,
 print(head(top_dx[, .N, by = .(icd_code, long_title)][order(-N)], 10))
 
 # --- Save cohort for Step 2 ---
-out_dir <- "C:/Users/Mengyan/Desktop/Hospital-readmission-prediction-from-EHR-data/data/processed"
+out_dir <- "G:/PHD_courses_start_star_star/Hospital-readmission-prediction-from-EHR-data/data/processed"
 dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
 fwrite(cohort, file.path(out_dir, "cohort_step1.csv"))
 cat("\nCohort saved to", file.path(out_dir, "cohort_step1.csv"), "\n")

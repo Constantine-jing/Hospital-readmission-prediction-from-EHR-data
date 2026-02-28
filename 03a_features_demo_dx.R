@@ -5,8 +5,8 @@
 
 library(data.table)
 
-raw_dir <- "C:/Users/Mengyan/Desktop/Hospital-readmission-prediction-from-EHR-data/data/raw"
-processed_dir <- "C:/Users/Mengyan/Desktop/Hospital-readmission-prediction-from-EHR-data/data/processed"
+raw_dir <- "G:/PHD_courses_start_star_star/Hospital-readmission-prediction-from-EHR-data/data/raw"
+processed_dir <- "G:/PHD_courses_start_star_star/Hospital-readmission-prediction-from-EHR-data/data/processed"
 
 cohort <- fread(file.path(processed_dir, "cohort_step2.csv"))
 diagnoses <- fread(file.path(raw_dir, "diagnoses_icd.csv.gz"))

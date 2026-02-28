@@ -5,7 +5,7 @@
 library(data.table)
 
 # --- Read cohort from Step 1 ---
-processed_dir <- "C:/Users/Mengyan/Desktop/Hospital-readmission-prediction-from-EHR-data/data/processed"
+processed_dir <- "G:/PHD_courses_start_star_star/Hospital-readmission-prediction-from-EHR-data/data/processed"
 cohort <- fread(file.path(processed_dir, "cohort_step1.csv"))
 
 # --- 2.1 Convert datetime columns ---
