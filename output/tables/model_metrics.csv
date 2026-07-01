@@ -1,0 +1,4 @@
+"model","n","n_positive","auc_oof","brier","threshold","threshold_rule","sensitivity","specificity","ppv","npv","TP","FP","TN","FN"
+"Elastic Net",93570,14852,0.6808,0.1241,0.1567,"Youden's J (max sensitivity+specificity-1)",0.5405,0.7278,0.2726,0.8936,8028,21427,57291,6824
+"Random Forest",93570,14852,0.6856,0.1232,0.1909,"Youden's J (max sensitivity+specificity-1)",0.551,0.7177,0.2691,0.8944,8183,22221,56497,6669
+"XGBoost",93570,14852,0.6944,0.2113,0.4712,"Youden's J (max sensitivity+specificity-1)",0.6347,0.6505,0.2552,0.9042,9427,27510,51208,5425
